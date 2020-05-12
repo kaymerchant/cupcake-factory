@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cup Cake Factory</title>
+    <link rel="stylesheet" href="../../cupcake-factory/style.css">
+    <link rel="stylesheet" href="customBasket.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="title">
+            <a href="../../cupcake-factory/index.html">
+            <h1><img src="../images/cover.gif">The Cupcake Factory<img src="../images/cover.gif"></h1>
+            </a>
+        </div>
+        <div class="topnav">
+            <a href="../cakes/shopCake.html">shop Cakes</a>
+            <a href="../cupcakes/shopCupcake.html">shop Cupcakes</a>
+            <a href="../treats/shopTreats.html">shop Treats</a>
+            <a href="#">Customize Basket</a>
+            <div class="topnav-right">
+                <a herf="myCart">My Cart</a>
+            </div>
+        </div>
+        <img id="coverImage" src="../images/basket/coverimage.jpg">
+        <div id="coverStory">
+            <h1>Each occasion needs a special touch. Customize your basket to make each ocassion special!</h1>
+            <button onclick="showOptions()">Let's build a customize basket</button>
+        </div>
+        <div class="customize-order">
+            <div id="ocassion-selection"  style="display: none;">
+                <p>Select Ocassion</p>
+                <input type="radio" id="birthday" name="ocassion" onclick="ocassionSelection(id)">
+                    <label for="birthday">Birthday</label>
+                <input type="radio" id="anniversary" name="ocassion" onclick="ocassionSelection(id)">
+                    <label for="anniversary">Anniversary</label>
+                <input type="radio" id="graduation" name="ocassion" onclick="ocassionSelection(id)">
+                    <label for="graduation">Graduation</label>
+                <input type="radio" id="getwellsoon" name="ocassion" onclick="ocassionSelection(id)">
+                    <label for="getwellsoon">Get well soon</label>
+                <input type="radio" id="thankyou" name="ocassion" onclick="ocassionSelection(id)">
+                    <label for="thankyou">Thank you</label>
+                <input type="radio" id="special" name="ocassion" onclick="ocassionSelection(id)">
+                    <label for="special">For someone special</label>
+            </div>
+            <div id="basket-size" style="display: none;">
+                <p>Select basket size</p>
+                <input type="radio" id="small" name="basket" onclick="basketSelection(id)">
+                    <label for="small">Small-Sized Basket</label>
+                    <p>$9.99</p>
+                    <p>6pcs cupcake(including 2pc ocassion special), 3pcs browine and 2pcs of cookie</p>
+                    
+                <input type="radio" id="medium" name="basket" onclick="basketSelection(id)">
+                    <label for="medium">Medium-Sized Basket</label>
+                    <p>$14.99</p>
+                    <p>8pcs cupcake(including 2pc ocassion special), 9pcs browine and 4pcs of cookie</p>
+    
+                <input type="radio" id="large" name="basket" onclick="basketSelection(id)">
+                    <label for="large">Large-sized Basket</label>
+                    <p>$19.99</p>
+                    <p>12pcs cupcake(including 2pc ocassion special), 12pcs browine and 6pcs of cookie</p>
+                    
+            </div>
+            <div id="treat-option" style="display: none;">
+                <div class="treat-selection">
+                    <img src="../images/basket/cupcake.png">
+                    <div id="cupcake-list">
+                    </div>
+                </div>
+                <div class="treat-selection">
+                    <img src="../images/basket/browine.png">
+                    <div id="browine-list">
+                    </div>
+                </div>
+                <div class="treat-selection">
+                    <img src="../images/basket/cookie.png">
+                    <div id="cookie-list">
+                    </div>
+                </div>
+                </div>
+        </div>
+        
+            <div id="order-summary" style="display: none;">
+                <p>Items in your customize basket</p>
+                <div id="cupcake-order"><strong>Cupcake Order</strong></div>
+                <div id="browine-order"><strong>Browine Order</strong></div>
+                <div id="cookie-order"><strong>Cookie Order</strong></div>
+                <button onclick=addToCart()>Add to Cart</button>
+            </div>
+            </div>
+        
+        <script src="customizeBasket.js"></script>
+</body>
+</html>

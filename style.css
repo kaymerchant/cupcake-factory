@@ -1,0 +1,138 @@
+/*main styling*/
+body {
+    background:pink;
+    color: black;
+}
+
+
+.main-container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Playball', cursive;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.topnav a:hover {
+  color: palevioletred;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.topnav a:active {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.title img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding: 5px;
+}
+
+.title h1{
+  text-align: center;
+  
+}
+
+.topnav{
+  height : 30px;
+  border:5px;
+  background-color: whitesmoke;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.topnav-right {
+  float:right;
+}
+
+.coverStory {
+    position: relative;
+    font-family: Arial;
+  }
+
+  #imageChange {
+      height:620px;
+      width:100%;
+      margin: auto; 
+  }
+
+   #text-block {
+    display: inline-block;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    bottom:20px;
+    right:20px;
+    background-color: black;
+    color: white;
+  } 
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+ .gird{
+  display: inline-block;
+  width: 30%;
+  border: 1px solid gray;
+  margin: auto;
+  padding: 20px;
+  
+ }
+
+ .gird:hover{
+   border:2px solid black;
+ }
+
+ .gird img{
+  position: relative;
+  float:  center;
+  width: 90%;
+  padding : 20px;
+}
+
+.gird p {
+  text-align:center;
+  border: 2px;
+  padding:2px;
+  font-size: 20px;
+  background-color: hotpink;
+  color:white;
+}
+
+.gird p:hover{
+  border:2px solid black;
+}
+
+.about-us p{
+  text-align: justify;
+}
+
+#atlanta {
+  display: block;
+  width:100%;
+  height:300px;
+  padding: 5px;
+}
+
+footer {
+  border: 10px solid white;
+  text-align: center;
+}

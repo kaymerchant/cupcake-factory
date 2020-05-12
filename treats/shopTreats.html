@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cup Cake Factory</title>
+    <link rel="stylesheet" href="../../cupcake-factory/style.css">
+    <link rel="stylesheet" href="shopTreats.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="title">
+            <a href="../../cupcake-factory/index.html">
+            <h1><img src="../images/cover.gif">The Cupcake Factory<img src="../images/cover.gif"></h1>
+            </a>
+        </div>
+        <div class="topnav">
+            <a href="../cakes/shopCake.html">shop Cakes</a>
+            <a href="../cupcakes/shopCupcake.html">shop Cupcakes</a>
+            <a href="#">shop Treats</a>
+            <a href="../baskets/customizeBasket.html">Customize Basket</a>
+            <div class="topnav-right">
+                <a herf="myCart">My Cart</a>
+            </div>
+        </div>
+        <div id="treatMenu">
+            <div id="treatOption">
+                <button id="browine" onClick="displayOnly(id)">Browine</button>
+                <button id="pie" onClick="displayOnly(id)">Pie</button>
+                <button id="cookie" onClick="displayOnly(id)">Cookie</button>
+                <button id="basket" onClick="displayOnly(id)">Basket</button>
+                <button id="all" onClick="displayOnly(id)">View All</button>
+            </div>
+            <div class="treat-grid">
+                <div id="browine-grid">
+                    <div class="grid-view">
+                        <img src="../images/treats/browine/assortedbrowine.jpg" alt="assortedbrowine">
+                        <p class="treatName">Assorted Browine</p>
+                        <p class="treatPrice">$4.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                    <div class="grid-view">
+                        <img src="../images/treats/browine/browinecheesecake.jpg" alt="browinecheesecake">
+                        <p class="treatName">Browine CheeseCake</p>
+                        <p class="treatPrice">$20.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                    <div class="grid-view">
+                        <img src="../images/treats/browine/glutenfreebrownie.jpg" alt="glutenfreebrownie">
+                        <p class="treatName">Gulten Free Browine</p>
+                        <p class="treatPrice">$14.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                </div>
+                <div id="pie-grid">
+                    <div class="grid-view">
+                        <img src="../images/treats/pie/applepie.jpg" alt="applepie">
+                        <p class="treatName">Apple Pie</p>
+                        <p class="treatPrice">$14.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                    <div class="grid-view">
+                        <img src="../images/treats/pie/chocolatepie.jpg" alt="chocolatepie">
+                        <p class="treatName">Chocolate Pie</p>
+                        <p class="treatPrice">$20.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                    <div class="grid-view">
+                        <img src="../images/treats/pie/strawberrypie.jpg" alt="strawberrypie">
+                        <p class="treatName">Strawberry Pie</p>
+                        <p class="treatPrice">$10.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                </div>
+                <div id="cookie-grid">
+                    <div class="grid-view">
+                        <img src="../images/treats/cookie/cookiebox.jpg" alt="cookiebox">
+                        <p class="treatName">Cookie Box</p>
+                        <p class="treatPrice">$24.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                    <div class="grid-view">
+                        <img src="../images/treats/cookie/sandwichcookie.jpg" alt="sandwichcookie">
+                        <p class="treatName">Sandwich Cookie</p>
+                        <p class="treatPrice">$10.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                    <div class="grid-view">
+                        <img src="../images/treats/cookie/sugarcookies.jpg" alt="sugarcookie">
+                        <p class="treatName">Sugar Cookie</p>
+                        <p class="treatPrice">$10.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                </div>
+                <div id="basket-grid">
+                    <div class="grid-view">
+                        <img src="../images/treats/basket/combogift.jpg" alt="combogift">
+                        <p class="treatName">Combo Gift</p>
+                        <p class="treatPrice">$20.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                    <div class="grid-view">
+                        <img src="../images/treats/basket/cookiebasket.jpg" alt="cookiebasket">
+                        <p class="treatName">Cookie Basket</p>
+                        <p class="treatPrice">$10.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                    <div class="grid-view">
+                        <img src="../images/treats/basket/snackbasket.jpg" alt="snackbasket">
+                        <p class="treatName">snackbasket</p>
+                        <p class="treatPrice">$14.99<button onclick="addToCart()">Add to cart</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="shopTreats.js"></script>
+</body>
+</html>

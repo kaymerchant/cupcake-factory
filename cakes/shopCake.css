@@ -1,0 +1,30 @@
+.gird-view {
+    display: inline-block;
+    width: 30%;
+    border: 1px solid gray;
+    margin: auto;
+    padding: 20px;
+    margin: 5px;
+}
+
+.gird-view img {
+    position: relative;
+    float:  center;
+    width: 90%;
+    padding : 20px;
+}
+
+.cakeName {
+    text-align: center;
+    font-style: italic;
+}
+
+.cakePrice button{
+    float: right;
+}
+
+#coverImage {
+    height: 500px;
+    width: 100%;
+    margin: auto;
+}

@@ -1,0 +1,45 @@
+.coverImages img{
+    width: 33%;
+    margin: auto;
+}
+
+#treatOption {
+    padding: 10px;
+    width: 75%;
+    margin: auto;
+}
+
+#treatOption button {
+    width: 17%;
+    height: 25px;
+    background-color: lightskyblue;
+    font-weight: bold;
+}
+
+#treatOption button:hover {
+    background-color: white;
+}
+.grid-view img {
+    width: 90%;
+    position: relative;
+    float:  center;
+    padding : 20px;
+}
+
+.grid-view {
+    display: inline-block;
+    width: 30%;
+    border: 1px solid gray;
+    margin: auto;
+    padding: 20px;
+    margin: 5px;
+}
+
+.treatName {
+    text-align: center;
+    font-style: italic;
+}
+
+.treatPrice button{
+    float: right;
+}

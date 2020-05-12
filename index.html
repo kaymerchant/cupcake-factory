@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cup Cake Factory</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="title">
+            <a href="index.html">
+            <h1><img src="images/cover.gif">The Cupcake Factory<img src="images/cover.gif"></h1>
+            </a>
+        </div>
+        <div class="topnav">
+            <a href="cakes/shopCake.html">shop Cakes</a>
+            <a href="cupcakes/shopCupcake.html">shop Cupcakes</a>
+            <a href="treats/shopTreats.html">shop Treats</a>
+            <a href="baskets/customizeBasket.html">Customize Basket</a>
+            <div class="topnav-right">
+                <a herf="myCart">My Cart</a>
+            </div>
+        </div>
+        <div class="coverStory">
+            <img id="imageChange" src="images/carousel/1.jpg" alt="cake" >
+            <p id="text-block">Cakes are special. Every birthday, every celebration ends with something sweet, 
+                a cake, and people remember. It's all about the memories. <p>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick=setSlideNumber(1)></span> 
+                <span class="dot" onclick=setSlideNumber(2)></span> 
+                <span class="dot" onclick=setSlideNumber(3)></span> 
+                <span class="dot" onclick=setSlideNumber(4)></span>
+              </div>
+        <div class="shopBy">
+            <h2>SHOP BY GIFT TYPE</h2>
+            <p>The widest variety and most popular selection of flavors anywhere online!</p>
+            <div class="gift-gird">
+                <div class="gird">
+                    <a href="cakes/shopCake.html">
+                    <img src="images/shopBy/gg1.jpg" alt="cake">
+                    </a>
+                    <p>Cakes</p>
+                </div>
+                <div class="gird">
+                    <a href="cupcakes/shopCupcake.html">
+                    <img src="images/shopBy/gg2.jpg" alt="cupcake">
+                    </a>
+                    <p>Cupcakes</p>
+                </div>
+                <div class="gird">
+                    <a href="treats/shopTreats.html">
+                    <img src="images/shopBy/gg3.jpg" alt="treats">
+                    </a>
+                    <p>Treats</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-us">
+            <h2>About us</h2>
+            <p>I am a full-stack developer and The Cup-Cake Factory is a project built as a part of my portfolio. The webpage is built using HTML, CSS, and Javascript. The webpage is divided into 5 pages starting with the homepage that runs an automatic carousel and navbar to navigate to other pages. The navbar links to shop Cakes, shop Cupcakes, shop Treats, customize basket and each page is designed uniquely.
+                Shop Cakes page is a grid display of cake images and shop Cupcakes provide an interactive UI to dynamically display the quantity and type of cupcake selected. Shop treats display images of cookies, brownies, pies, baskets in a grid layout and can be sorted as per the selected category. Customize basket is an interactive page that helps you to customize a basket by selecting an occasion, choice of basket size, and add treats on the basis of user requirements. The webpage is built to showcase my skills as a full stack developer and enhance my learnings.</p>
+            <img id="atlanta" src="images/atlanta.png">
+        </div>
+        <footer>
+            <p>Created by:Kanwal Merchant</p>
+          </footer>
+        </div>
+    <script src="home.js"></script>
+</body>
+</html>

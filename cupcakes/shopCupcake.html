@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cup Cake Factory</title>
+    <link rel="stylesheet" href="../../cupcake-factory/style.css">
+    <link rel="stylesheet" href="shopCupcake.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="title">
+            <a href="../../cupcake-factory/index.html">
+            <h1><img src="../images/cover.gif">The Cupcake Factory<img src="../images/cover.gif"></h1>
+            </a>
+        </div>
+        <div class="topnav">
+            <a href="../cakes/shopCake.html">shop Cakes</a>
+            <a href="#">shop Cupcakes</a>
+            <a href="../treats/shopTreats.html">shop Treats</a>
+            <a href="../baskets/customizeBasket.html">Customize Basket</a>
+            <div class="topnav-right">
+                <a herf="myCart">My Cart</a>
+            </div>
+        </div>
+        <div class="top">
+            <div class="cover-story">
+                <img id="coverImage" src="../images/cupcake/cupcakecover.jpg">
+            </div>
+        <div class="cupcake">
+            <div class="step">
+                <h1>Step 1</h1>
+                <p>Choose a size of cupcake</p>
+                <form>
+                    <input type="radio" id="small" name="quantity" onclick=amountPerPiece(1.25)>
+                    <label for="small">Small Cupcakes</label></br>
+                    <input type="radio" id="large" name="quantity" onclick=amountPerPiece(1.75) checked>
+                    <label for="large">Large Cupcakes</label></br>
+                </br>
+                <p>Choose number of cupcakes</p>
+                <input type="radio" id="halfdozen" name="size" onclick=quantityOrdered(6)>
+                <label for="halfdozen">Half Dozen</label></br>
+                <input type="radio" id="onedonzen" name="size" onclick=quantityOrdered(12) checked>
+                <label for="onedozen">One dozen </label></br>
+                </form>
+                <div id="display"></div>
+            </div>
+            <div class="step">
+                <h1>Step 2</h1>
+                <p>Choose your flavors:</br>
+                    How many of each?
+                </p>
+                <input type="text" size = '2' id="chocolateFrosting" name="chocolate-frosting" onkeyup="cupcakesOrder(this)" value="">
+                <label for="chocolateFrosting">Chocolate Frosting</label><br>
+                <input type="text" size = '2' id="oeroFrosting" onkeyup="cupcakesOrder(this)" value="">
+                <label for="oeroFrosting">Oero-Cream Frosting</label><br>
+                <input type="text" size = '2' id="birthdayFrosting" onkeyup="cupcakesOrder(this)" value="">
+                <label for="birthdayFrosting">Birthday Cake-Sprinkles Frosting</label><br>
+                <input type="text" size = '2' id="strawberryFrosting" onkeyup="cupcakesOrder(this)" value="">
+                <label for="strawberryFrosting">Strawberry Frosting</label><br>
+                <input type="text" size = '2' id="unicornFrosting" onkeyup="cupcakesOrder(this)" value="">
+                <label for="unicornFrosting">Unicorn Frosting</label><br>
+            </div>
+            <div class="step">
+                <h1>Step 3</h1>
+                <p>Flavours Selected:</p>
+                <div id="hidden">
+                </div>
+                <div id="total"></div>
+                <button onClick="addToCart()">Add To Cart</button>
+        </div>
+    </div>
+    <script src="shopCupcake.js"></script>
+    <script src="checkOut.js"></script>
+</body>
+</html>
+</head>
